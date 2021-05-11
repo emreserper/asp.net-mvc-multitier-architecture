@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<style>    
+    .info-box-number { font-size:28px; }
+    info-box-text { font-size:18px; }
+</style>
+<br />
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active">İstatistikler</li>
+</ol>
+<div class="row">
+    <div class="col-md-3 col-sm-6 col-12">
+        <div class="info-box bg-info">
+            <div class="info-box-content">
+                <span class="info-box-text">Toplam Kategori Sayısı</span>
+                <span class="info-box-number">@ViewBag.d1</span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+    <div class="col-md-3 col-sm-6 col-12">
+        <div class="info-box bg-success">
+            <div class="info-box-content">
+                <span class="info-box-text">Başlık tablosunda "yazılım" kategorisine ait başlık sayısı</span>
+                <span class="info-box-number">@ViewBag.d2</span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+    <div class="col-md-3 col-sm-6 col-12">
+        <div class="info-box bg-warning">
+            <div class="info-box-content">
+                <span class="info-box-text">Yazar adında 'a' harfi geçen yazar sayısı</span>
+                <span class="info-box-number">@ViewBag.d3</span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+    <div class="col-md-3 col-sm-6 col-12">
+        <div class="info-box bg-primary">
+            <div class="info-box-content">
+                <span class="info-box-text">En fazla başlığa sahip kategori adı</span>
+                <span class="info-box-number">@ViewBag.d4</span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <div class="col-md-3 col-sm-6 col-12">
+        <div class="info-box bg-danger">
+            <div class="info-box-content">
+                <span class="info-box-text">Kategori tablosunda durumu true olan kategoriler<br /> ile false olan kategoriler arasındaki sayısal fark</span>
+                <span class="info-box-number">@ViewBag.d5</span>
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+</div>
